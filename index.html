@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no viewport-fit=contain"
     />
     <!-- Template Basic Images Start -->
     <meta property="og:image" content="path/to/image.jpg" />
@@ -40,12 +40,11 @@
 
   <body>
     <div class="wrap">
-      <h1>Covet Pics test iphone v0017</h1>
+      <h1 class="title">Slider test Lazy Load</h1>
       <!-- <covet-pics-widget gallery-embed-id="99549"></covet-pics-widget> -->
       <!-- <covet-pics-widget gallery-embed-id="1139"></covet-pics-widget> -->
       <covet-pics-widget
-      gallery-embed-id="1139"
-      environment="staging"
+      gallery-embed-id="99549"
       ></covet-pics-widget>
     </div>
     <script type="text/javascript">
@@ -56,7 +55,7 @@
           // "http://e3b954470ef7.ngrok.io/build/covet-pics-widget.esm.js"
           // "http://8fa8131e752f.ngrok.io/build/covet-pics-widget.esm.js"
           // "http://7b19df7136a6.ngrok.io/build/covet-pics-widget.esm.js"
-          "https://8e40abd7370f.ngrok.io/build/covet-pics-widget.esm.js"
+          "http://8e40abd7370f.ngrok.io/build/covet-pics-widget.esm.js"
         console.log("scriptElmModule: ", scriptElmModule)
         document.querySelector("head").appendChild(scriptElmModule)
         var scriptElmPolyfill = document.createElement("script")
@@ -72,7 +71,7 @@
       var scr = {
         scripts: [
           { src: "js/libs.min.js", async: false },
-          { src: "js/common.js", async: false },
+          // { src: "js/common.js", async: false },
         ],
       }
       !(function (t, n, r) {
